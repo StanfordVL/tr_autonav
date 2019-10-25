@@ -1,0 +1,11 @@
+<launch>
+
+<include file="$(find turtlebot_bringup)/launch/minimal.launch" />
+
+<node pkg="hokuyo_node" type="hokuyo_node" name="hokuyo_node" />
+
+<include file="$(find turtlebot_navigation)/launch/amcl_gates.launch" />
+
+<include file="$(find kobuki_auto_docking)/launch/minimal.launch" />
+
+</launch>
